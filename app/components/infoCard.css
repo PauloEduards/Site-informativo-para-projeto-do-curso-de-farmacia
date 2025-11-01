@@ -1,0 +1,88 @@
+/* ============================================== */
+/* ESTILOS DO INFOCARD (O FILHO)
+/* ============================================== */
+.info-card {
+  background-color: #1f2333;
+  border-radius: 12px;
+  border: 1px solid #434960;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: #e0e0e0;
+
+  /* 1. Ativa o Flexbox para organizar o *interior* do card */
+  display: flex;
+  flex-direction: column; /* Empilha os filhos verticalmente */
+
+  /* 2. Faz o card ocupar 100% da altura 
+     que o "grid" (o pai no globals.css) deu a ele.
+  */
+  height: 100%;
+}
+
+.info-card.com-resultado {
+  border-color: #0EB1D2;
+  box-shadow: 0 0 15px #01ccf5;
+  height: auto;
+}
+
+.Titulo-doença {
+  padding: 0.8rem 1rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0EB1D2;
+  text-align: center; /* Centraliza o título */
+}
+
+/* Conteúdo de texto (descrição) */
+.info-card-content {
+  padding: 1rem 1.5rem 1.5rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+  text-align: justify;
+
+  /* Faz o conteúdo "crescer" para ocupar o espaço 
+     disponível, ajudando a empurrar o rodapé.
+  */
+  flex-grow: 1;
+}
+
+.info-card-content p {
+  margin: 0;
+}
+
+/* Bloco da porcentagem (Fica no fundo) */
+.info-card-resultado {
+  /* Esta é a chave! Empurra o bloco para o fundo do card */
+  margin-top: auto;
+  
+
+  /* Apenas estilo */
+  padding: 0 1rem 1rem;
+}
+
+.porcentagem-valor {
+  /* Tamanho maior e centralizado */
+  font-size: 2rem;
+  text-align: center;
+  margin-top: -1.5rem ;
+
+  font-weight: 700;
+  color: #f0f0f0;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.porcentagem-barra-fundo {
+  width: 100%;
+  height: 10px;
+  background-color: #1f2333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.porcentagem-barra-preenchimento {
+  height: 100%;
+  background-color: #0EB1D2;
+  border-radius: 5px;
+  transition: width 0.5s ease-out;
+}
