@@ -42,7 +42,7 @@ export default function Home() {
       <header style={{ textAlign: 'center', marginBottom: '3rem'}}>
         <div className='card-inicial'>
 
-          <h1 className='Titulo-pricipal'>Conheça as Doenças Parasitárias: Um Guia Rápido para sua Saúde</h1>
+          <h1 className='Titulo-pricipal'>Conheça as Enteroparasitoses: Um Guia Rápido para sua Saúde</h1>
           <br />
           {/* Texto dinâmico */}
           <p className='paragrafo'>Você sabe a diferença entre Ascaridíase, Amebíase e Giardíase? Essas infecções são muito comuns, mas nem sempre fáceis de identificar.</p>
@@ -71,7 +71,7 @@ export default function Home() {
           porcentagem={resultados?.amebiase}
         >
           <p >
-            A Amebíase é uma infecção causada pelo protozoário Entamoeba histolytica, que se aloja principalmente no intestino grosso.
+            A Amebíase é uma infecção causada pelo protozoário <i>Entamoeba histolytica</i>, que se aloja principalmente no intestino grosso.
             A transmissão acontece pela ingestão de cistos (a forma resistente do parasita)
             encontrados em água ou alimentos contaminados. Muitas vezes, a infecção não causa sintomas.
             No entanto, quando sintomática, pode variar de uma diarreia leve até um quadro grave de disenteria
@@ -85,7 +85,7 @@ export default function Home() {
           porcentagem={resultados?.giardiase}
         >
           <p >
-            A Giardíase é causada pelo parasita Giardia lamblia e afeta o intestino delgado.
+            A Giardíase é causada pelo parasita <i>Giardia lamblia</i> e afeta o intestino delgado.
             A transmissão ocorre pela via fecal-oral, através do consumo de água ou alimentos contaminados.
             O quadro agudo é marcado por diarreia explosiva e dores abdominais.
             O quadro crônico pode levar à má absorção de nutrientes, perda de peso e esteatorreia
@@ -99,7 +99,7 @@ export default function Home() {
           porcentagem={resultados?.ascaridiase}
         >
           <p >
-            Conhecida como "lombriga", a Ascaridíase é causada pelo verme Ascaris lumbricoides.
+            Conhecida como "lombriga", a Ascaridíase é causada pelo verme <i>Ascaris lumbricoides</i>.
             A infecção ocorre ao ingerir os ovos do parasita (solo, água ou alimentos).
             Possui uma fase pulmonar, durante a migração das larvas, que pode causar tosse e febre;
             e a fase intestinal, com os vermes adultos, que pode gerar dor abdominal, náuseas e diarreia.
